@@ -8,22 +8,55 @@
             text-align: center;
             background-color: #f4f4f4;
             margin-top: 50px;
+            /* This keeps content from touching the very edge of mobile screens */
+            padding: 20px;
         }
+
+        /* --- IMAGE STYLES --- */
         img {
-            /* This limits the image width so it doesn't take over the whole screen */
-            max-width: 100%;
+            /* CHANGE THIS NUMBER to make the image bigger or smaller */
+            width: 300px; 
+            
             height: auto;
-            border: 5px solid white; /* Adds a nice frame */
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Adds a subtle shadow */
+            border: 5px solid white;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            margin-bottom: 30px; /* Space below the image */
+        }
+
+        /* --- VIDEO STYLES --- */
+        .video-container {
+            margin: 20px auto; /* Centers the video */
+            max-width: 560px; /* Prevents video from getting too huge on big screens */
+        }
+        
+        iframe {
+            width: 100%; /* Makes video fill the container width */
+            aspect-ratio: 16 / 9; /* Keeps the rectangle shape correct */
+            border: none;
         }
     </style>
 </head>
 <body>
 
     <h1>Archive Project</h1>
-    
     <p>Welcome to my digital collection.</p>
 
+    <img src="archive.jpg" alt="Archive Project Image">
+    
+    <hr style="width:50%; margin: 40px auto;">
+
+    <h2>Featured Videos</h2>
+    
+    <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+
+    <div class="video-container">
+        <p><i>Paste another video code here to add more!</i></p>
+    </div>
+
+</body>
+</html>
     <img src="archive.jpeg" alt="A photo from the Archive Project">
 
 </body>
