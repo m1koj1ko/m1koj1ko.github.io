@@ -3,18 +3,20 @@
 <head>
     <title>Archive Project</title>
     <style>
-        /* --- GENERAL PAGE STYLES --- */
+        /* --- DARK THEME --- */
         body {
             font-family: Arial, sans-serif;
-            margin: 0; /* Removes default white space at edges */
-            background-color: #f4f4f4;
+            margin: 0;
+            background-color: #1a1a1a; /* Dark Grey Background */
+            color: #f4f4f4; /* Light Text */
         }
 
-        /* --- NAVIGATION BAR STYLES --- */
+        /* --- NAVIGATION BAR --- */
         .navbar {
             overflow: hidden;
-            background-color: #333; /* Dark grey background */
-            text-align: center; /* Centers the buttons */
+            background-color: #000; /* Pure Black Nav Bar */
+            text-align: center;
+            border-bottom: 1px solid #444;
         }
 
         .navbar a {
@@ -22,37 +24,36 @@
             color: white;
             text-align: center;
             padding: 14px 20px;
-            text-decoration: none; /* Removes underline */
+            text-decoration: none;
             font-weight: bold;
+            font-size: 18px;
         }
 
         .navbar a:hover {
-            background-color: #ddd; /* Light grey on hover */
-            color: black;
+            background-color: #333; /* Dark Grey hover */
+            color: #fff;
         }
 
-        /* --- MAIN CONTENT AREA --- */
+        /* --- LAYOUT --- */
         .content {
             text-align: center;
             padding: 20px;
             margin-top: 20px;
         }
 
-        /* --- IMAGE STYLES --- */
         img {
-            width: 300px; /* Reduced size */
+            width: 300px; 
             height: auto;
-            border: 5px solid white;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            border: 5px solid #444; /* Darker border to match theme */
+            box-shadow: 0 4px 15px rgba(0,0,0,0.5);
             margin-bottom: 30px;
         }
 
-        /* --- VIDEO STYLES --- */
+        /* --- VIDEO --- */
         .video-container {
             margin: 20px auto;
             max-width: 560px;
         }
-        
         iframe {
             width: 100%;
             aspect-ratio: 16 / 9;
@@ -63,26 +64,24 @@
 <body>
 
     <div class="navbar">
-        <a href="#message">Message</a>
-        <a href="#stories">Stories</a>
-        <a href="#donation">Donation</a>
-        <a href="#contact">Contact</a>
+        <a href="index.html">Home</a> <a href="message.html">Message</a>
+        <a href="stories.html">Stories</a>
+        <a href="donation.html">Donation</a>
+        <a href="contact.html">Contact</a>
     </div>
 
     <div class="content">
         <h1>Archive Project</h1>
         <p>Welcome to my digital collection.</p>
 
-        <img src="archive.jpeg" alt="Archive Project Image">
+        <img src="archive.jpeg" alt="Archive Project Logo">
         
-        <hr style="width:50%; margin: 40px auto;">
+        <hr style="width:50%; margin: 40px auto; border-color: #444;">
 
         <h2>Featured Videos</h2>
-        
         <div class="video-container">
-            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video player" allowfullscreen></iframe>
         </div>
-
     </div>
 
 </body>
