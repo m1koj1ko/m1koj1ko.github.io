@@ -3,61 +3,87 @@
 <head>
     <title>Archive Project</title>
     <style>
+        /* --- GENERAL PAGE STYLES --- */
         body {
             font-family: Arial, sans-serif;
-            text-align: center;
+            margin: 0; /* Removes default white space at edges */
             background-color: #f4f4f4;
-            margin-top: 50px;
-            /* This keeps content from touching the very edge of mobile screens */
+        }
+
+        /* --- NAVIGATION BAR STYLES --- */
+        .navbar {
+            overflow: hidden;
+            background-color: #333; /* Dark grey background */
+            text-align: center; /* Centers the buttons */
+        }
+
+        .navbar a {
+            display: inline-block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none; /* Removes underline */
+            font-weight: bold;
+        }
+
+        .navbar a:hover {
+            background-color: #ddd; /* Light grey on hover */
+            color: black;
+        }
+
+        /* --- MAIN CONTENT AREA --- */
+        .content {
+            text-align: center;
             padding: 20px;
+            margin-top: 20px;
         }
 
         /* --- IMAGE STYLES --- */
         img {
-            /* CHANGE THIS NUMBER to make the image bigger or smaller */
-            width: 300px; 
-            
+            width: 300px; /* Reduced size */
             height: auto;
             border: 5px solid white;
             box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-            margin-bottom: 30px; /* Space below the image */
+            margin-bottom: 30px;
         }
 
         /* --- VIDEO STYLES --- */
         .video-container {
-            margin: 20px auto; /* Centers the video */
-            max-width: 560px; /* Prevents video from getting too huge on big screens */
+            margin: 20px auto;
+            max-width: 560px;
         }
         
         iframe {
-            width: 100%; /* Makes video fill the container width */
-            aspect-ratio: 16 / 9; /* Keeps the rectangle shape correct */
+            width: 100%;
+            aspect-ratio: 16 / 9;
             border: none;
         }
     </style>
 </head>
 <body>
 
-    <h1>Archive Project</h1>
-    <p>Welcome to my digital collection.</p>
-
-    <img src="archive.jpeg" alt="Archive Project Image">
-    
-    <hr style="width:50%; margin: 40px auto;">
-
-    <h2>Featured Videos</h2>
-    
-    <div class="video-container">
-        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <div class="navbar">
+        <a href="#message">Message</a>
+        <a href="#stories">Stories</a>
+        <a href="#donation">Donation</a>
+        <a href="#contact">Contact</a>
     </div>
 
-    <div class="video-container">
-        <p><i>Paste another video code here to add more!</i></p>
-    </div>
+    <div class="content">
+        <h1>Archive Project</h1>
+        <p>Welcome to my digital collection.</p>
 
-</body>
-</html>
-    <img src="archive.jpeg" alt="A photo from the Archive Project">
+        <img src="archive.jpeg" alt="Archive Project Image">
+        
+        <hr style="width:50%; margin: 40px auto;">
+
+        <h2>Featured Videos</h2>
+        
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+
+    </div>
 
 </body>
 </html>
